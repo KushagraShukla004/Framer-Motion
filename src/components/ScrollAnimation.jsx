@@ -1,21 +1,32 @@
+import { useTransform } from "framer-motion";
 import { useSpring } from "framer-motion";
 import { useScroll, motion } from "framer-motion";
 
 const ScrollAnimation = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress);
+
+  const multBackground = useTransform(
+    scrollYProgress,
+    //@keyframes 0%...100%
+    [0, 1],
+    //@keyframes 0%...100% change into
+    ["rgb(86, 1, 245)", "rgb(245, 1, 1)"]
+  );
   return (
     <div>
       <motion.div
         style={{
           //this scaleX is from useSpring hook for sping animation to progressBar
           scaleX,
+
           //scaleX i.e move progressbar in x-axis
           //when scrollYProgress i.e when we scroll our page up and down
           // scaleX: scrollYProgress,
           //this makes the progress bar start from left (By default is center)
           transformOrigin: "left",
-          background: "blue",
+
+          background: multBackground,
           position: "sticky",
           top: 0,
           width: "100%",
