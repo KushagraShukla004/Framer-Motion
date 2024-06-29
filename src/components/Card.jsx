@@ -1,8 +1,6 @@
 const Card = () => {
   return (
-    <div className="bg-card text-card-foreground rounded-lg border shadow-sm">
-      Card
-    </div>
+    <div className="rounded-lg border bg-white text-black shadow-sm">Card</div>
   );
 };
 

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* just rgb values and not rgb() because we are going to wrap it in tailwind.config.js in order for us to use opacity property in classname */
+  --dark-bg: 28, 37, 54;
+}

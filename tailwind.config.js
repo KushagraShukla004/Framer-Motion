@@ -2,8 +2,10 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      //to use opacity features
+      dark: "rgba(var(--dark-bg))",
+    },
   },
   plugins: [],
-}
-
+};
