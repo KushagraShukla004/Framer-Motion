@@ -1,8 +1,8 @@
-// import BasicsOfMotion from "./components/BasicsOfMotion.jsx";
-// import Gestures from "./components/Gestures.jsx";
-// import AnimationControls from "./components/AnimationControls";
-// import ViewBaseAnimaions from "./components/ViewBaseAnimaions";
-import ScrollAnimation from "./components/ScrollAnimation";
+// import BasicsOfMotion from "./learnings/BasicsOfMotion.jsx";
+// import Gestures from "./learnings/Gestures.jsx";
+// import AnimationControls from "./learnings/AnimationControls";
+// import ViewBaseAnimaions from "./learnings/ViewBaseAnimaions";
+import ScrollAnimation from "./learnings/ScrollAnimation";
 
 import "./App.css";
 
