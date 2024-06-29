@@ -1,6 +1,8 @@
 const Card = () => {
   return (
-    <div className="rounded-lg border bg-white text-black shadow-sm">Card</div>
+    <div>
+      <h1 className="text-red-500">Card</h1>
+    </div>
   );
 };
 
